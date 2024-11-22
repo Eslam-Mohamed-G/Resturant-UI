@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 type Props = {
     id:number;
@@ -9,9 +9,13 @@ type Props = {
 }
 
 const Price = ({price, id, options}:Props) => {
-    const [total, setTotal] = useState(price)
-    const [quantity, setQuantity] = useState(1)
-    const [selected, setSelected] = useState(0)
+    const [total, setTotal] = useState(price);
+    const [quantity, setQuantity] = useState(1);
+    const [selected, setSelected] = useState(0);
+
+    useEffect(() => {
+        setTotal(quantity * (options ? price+options[selected].additionalPrice : price))
+    }, [quantity, selected, options, price]);
   return (
     <div className="w-full flex flex-col gap-8">
       <h2 className="text-2xl font-bold">${total.toFixed(2)}</h2>
