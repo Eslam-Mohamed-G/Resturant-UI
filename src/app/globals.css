@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* إخفاء شريط التمرير في متصفحات غير مدعومة */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
+
+/* تخصيص شريط التمرير */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px; /* عرض شريط التمرير */
+  height: 10px; /* ارتفاع شريط التمرير */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #ff6347; /* لون مقبض التمرير */
+  border-radius: 5px; /* حواف مقبض التمرير */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #e5533b; /* لون مقبض التمرير عند التمرير عليه */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f4f4f4; /* خلفية مسار التمرير */
+  border-radius: 5px; /* حواف مسار التمرير */
+}
+
+  
+.custom-scrollbar {
+  scrollbar-color: #ff6347 #f4f4f4; /* مقبض التمرير وخلفية المسار */
+  scrollbar-width: thin; /* عرض صغير */
+}
