@@ -1,13 +1,3 @@
-// import React from 'react'
-
-// const Offer = () => {
-//   return (
-//     <div>Offer</div>
-//   )
-// }
-
-// export default Offer
-
 import Image from "next/image";
 import React from "react";
 import CountDown from "./ComingSoon";

@@ -4,7 +4,6 @@ import Image from "next/image";
 import openImage from "../../public/open.png";
 import closeImage from "../../public/close.png";
 import Link from "next/link";
-import LoginPage from "@/app/login/page";
 import CartIcon from "./CartIcon";
 
 const links = [

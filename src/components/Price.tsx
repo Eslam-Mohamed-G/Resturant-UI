@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import { type } from 'os'
 import React from 'react'
 
 type Props = {
