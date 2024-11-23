@@ -1,5 +1,7 @@
+"use client"
 import Image from 'next/image'
 import React from 'react'
+import img from '../../../public/temporary/p1.png'
 
 const CartPage = () => {
   return (
@@ -8,7 +10,7 @@ const CartPage = () => {
       <div className='"h-1/2 p-4 flex flex-col justify-center lg:h-full lg:w-2/3 2xl:w-1/2 lg:px-20 xl:px-40"'>
       {/* single item */}
         <div className=' flex items-center justify-between mb-4'>
-          <Image src={''} alt={''}/>
+          <Image src={img} alt={'img'} width={100} height={100}/>
           <div className=''>
             <h1 className='uppercase text-xl font-bold'>sicilian</h1>
             <span>large</span>
