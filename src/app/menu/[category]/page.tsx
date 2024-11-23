@@ -11,7 +11,6 @@ const CategoryPage = () => {
   category == "pizzas" ? pizzas
   : category == "burgers" ? burgers
     : category == "pastas" ? pastas : [];
-    console.log("Slug value:", category);
 
   return (
     <>
