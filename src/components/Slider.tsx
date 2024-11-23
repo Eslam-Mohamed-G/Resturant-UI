@@ -1,8 +1,5 @@
 "use client"
 import React, { useEffect, useState } from 'react'
-import slide1img from "../../public/slide1.png";
-import slide2img from "../../public/slide2.png";
-import slide3img from "../../public/slide3.png";
 import Image from 'next/image';
 import { setInterval } from 'timers';
 const data = [
