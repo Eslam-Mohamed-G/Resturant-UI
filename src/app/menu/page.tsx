@@ -10,7 +10,7 @@ const MenuPage = () => {
           <div className={`text-${category.color} w-1/2 h-3/4 flex flex-col justify-between`}>
             <h1 className='uppercase font-bold text-3xl'>{category.title}</h1>
             <p className='text-sm my-2'>{category.desc}</p>
-            <button className={`hidden 2xl:block bg-${category.color} text-${category.color === "black" ? "white" : "red-500"} py-2 px-4 rounded-md w-fit`}>Explore</button>
+            <button className={`hidden md:block bg-${category.color} text-${category.color === "black" ? "white" : "red-500"} py-2 px-4 rounded-md w-fit`}>Explore</button>
           </div>
         </Link>
       ))}
